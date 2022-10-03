@@ -30,12 +30,12 @@
 
 <script setup>
 const router = useRouter()
-const locales = useState('locales')
+const locales = ['en', 'es']
 const locale = useState('locale')
 const localeUrl = () => locale.value !== 'en' ? `/${locale.value}` : ''
 const changeLocale = (loc) => {
   locale.value = loc
-  router.push({ path: localeUrl() || '/' })
+  router.push({path: localeUrl() || '/' })
 }
 
 const storyblokApi = useStoryblokApi()

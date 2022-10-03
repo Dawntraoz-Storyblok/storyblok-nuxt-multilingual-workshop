@@ -1,21 +1,23 @@
 <script setup>
-const { slug } = useRoute().params;
+let { slug } = useRoute().params
+onBeforeMount(() => {
+  useState('locale').value = 'es'
+})
 
 const resolveRelations = ['popular-articles.articles']
-
-const story = await useAsyncStoryblok(
+const story = await useStoryblok(
   slug && slug.length > 0 ? slug.join('/') : 'home',
   {
     version: 'draft',
-    language: 'en', // Add the language
-    resolve_relations: resolveRelations, // Resolved for the API request
+    language: 'es',
+    resolve_relations: resolveRelations,
   },
   {
-    resolveRelations, // Resolved for the Storyblok Bridge
+    resolveRelations,
   }
-);
+)
 </script>
- 
+
 <template>
   <StoryblokComponent v-if="story" :blok="story.content" />
 </template>
