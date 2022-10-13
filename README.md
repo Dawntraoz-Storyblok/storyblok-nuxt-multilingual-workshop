@@ -1,6 +1,18 @@
-# Nuxt 3 Minimal Starter
+# Build a full-blown multilingual site with Nuxt 3 + Storyblok workshop
 
-Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Workshop structure and exercises - [Notion docs](https://bit.ly/berlin-nuxt-and-storyblok)
+
+**Instructor**
+Alba Silvente
+
+**Date**
+2022-10-04
+
+**City**
+Berlin, Germany
+
+Look at the [Nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
+Look at the [Storyblok official website](https://storyblok.com) to learn more.
 
 ## Setup
 
